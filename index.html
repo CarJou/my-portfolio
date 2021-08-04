@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=PT+Mono&display=swap" rel="stylesheet">
+    <title>CarJou</title>
+    <link rel="stylesheet" href="sass/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-buttons">
+          <button class="ham" type="button" onclick="toggleMenu()">
+            <img src="./images/icon-hamburger.svg" alt="hamburguer icon" />
+          </button>
+          <div class="site-nav" id="site-nav">
+            <ul class="nav">
+              <li class="navbar">About me</li>
+              <li class="navbar">Projects</li>
+              <li class="navbar">Skills</li>
+              <li class="navbar">Contact</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section>
+          <div class="container">
+            <div class="content_home">
+              <h1 class="title_1">Hello world!</h1>
+              <h2 class="title_2">I´m Carla Joumier</h2>
+              <p class="description">Frontend developer & cat lover</p>
+              <div class="social_media">
+                <img
+                  class="social_img"
+                  src="./images/linkedin.svg"
+                  alt="icon-facebook"
+                />
+                <img
+                  class="social_img"
+                  src="./images/github.svg"
+                  alt="icon-facebook"
+                />
+              </div>
+            </div>
+            <div class="content_img">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_1plcwvk5.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay class="svg_plant"></lottie-player>
+            </div>
+          </div>
+        </section>
+    </header>
+        <!---->
+        <section>
+          <div class="container_2">
+            <div class="content_about">
+              <h1>About me</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis beatae voluptatibus odio porro ipsa repellat omnis
+                numquam placeat quibusdam, officiis aliquam ad adipisci facere
+                animi, enim vel consequatur maxime iusto.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container_3">
+            <h1>Projects</h1>
+            <div class="card">
+              <div class="card_image">
+                <img class="cat_card" src="/images/chatb.png" alt="" />
+              </div>
+              <div class="content_title">
+            <a href="https://chatbot-fawn.vercel.app/" target="_blank" rel="noopener noreferrer" class="link_repo"><img src="/images/link.svg" alt=""></a>
+              <h1
+              class="title_card">Chatbot</h1>
+            </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+                illo molestiae.
+              </p>
+              <div class="icons">
+                <img src="/images/icon-facebook.svg" alt="" /><img
+                  src="/images/icon-instagram.svg"
+                  alt=""
+                />
+              </div>
+            </div>  
+            <div class="card">
+              <div class="card_image">
+                <img class="cat_card" src="/images/sunny.jpg" alt="" />
+              </div>
+              <h1>Sunnyide</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+                illo molestiae.
+              </p>
+              <div class="icons">
+                <img src="/images/icon-facebook.svg" alt="" /><img
+                  src="/images/icon-instagram.svg"
+                  alt=""
+                />
+              </div>
+            </div>  
+            <div class="card">
+              <div class="card_image">
+                <img class="cat_card" src="/images/reactn.jpg" alt="" />
+              </div>
+              <h1>Catbot</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+                illo molestiae.
+              </p>
+              <div class="icons">
+                <img src="/images/icon-facebook.svg" alt="" /><img
+                  src="/images/icon-instagram.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card_image">
+                <img class="cat_card" src="/images/sunny.jpg" alt="" />
+              </div>
+              <h1>Sunnyide</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+                illo molestiae.
+              </p>
+              <div class="icons">
+                <img src="/images/icon-facebook.svg" alt="" /><img
+                  src="/images/icon-instagram.svg"
+                  alt=""
+                />
+              </div>
+            </div>  
+            <div class="card">
+           <h1>More view in @github</h1>
+          </div>
+          </div>
+        </div>
+        </section>
+        <!--skills-->
+        <section>
+          <div class="container_4">
+            <h1>Skills</h1>
+<div class="content_skills">
+  <div class="skill">
+    <img src="/images/react.png" alt="">
+  <h1 class="title_skill">React</h1></div>
+  <div class="skill">
+    <img src="/images/sass.png" alt="">
+  <h1 class="title_skill">Sass</h1></div>
+  <div class="skill">
+    <img src="/images/css-3.png" alt="">
+  <h1 class="title_skill">CSS3</h1></div>
+  <div class="skill">
+    <img src="/images/html-5.png" alt="">
+  <h1 class="title_skill">HTML5</h1></div>
+  <div class="skill">
+    <img src="/images/js.png" alt="">
+  <h1 class="title_skill">JavaScript</h1></div>
+</div>
+          </div>
+        </section>
+      </main>
+   
+    <script src="js/main.js"></script>
+  </body>
+</html>

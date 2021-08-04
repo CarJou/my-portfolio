@@ -1,0 +1,79 @@
+.content_about {
+  padding: 20px;
+}
+//projects
+.container_3 {
+  background-color: #fcd8d4;
+  border-top-right-radius: 8rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 8rem;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f8e2cf;
+  border-radius: 30px;
+  margin: 30px;
+  height: 20rem;
+  padding: 35px;
+  box-shadow: 0 3px 10px rgba(128, 128, 128, 0.699);
+}
+.card_image {
+  display: flex;
+  justify-content: center;
+}
+.cat_card {
+  width: 280px;
+  height: 180px;
+  border-radius: 20px;
+}
+.text_projects {
+  margin-left: 25px;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.content_title {
+  display: flex;
+  align-items: center;
+}
+.link_repo {
+  margin-top: 7px;
+
+  border-radius: 35px;
+  padding: 3px;
+
+  &:hover {
+    background-color: #fcd8d4;
+    border-radius: 19px;
+    color: #fc9f97;
+  }
+}
+.title_card {
+  color: black;
+  &:hover {
+    color: #fc9f97;
+  }
+}
+//skills
+.content_skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcd8d4;
+  border-radius: 30px;
+  padding: 35px;
+  box-shadow: 0 3px 10px rgba(128, 128, 128, 0.699);
+}
+.title_skill {
+  font-weight: normal;
+}
