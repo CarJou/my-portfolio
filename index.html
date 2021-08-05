@@ -16,15 +16,14 @@
       <nav>
         <div class="nav-buttons">
           <button class="ham" type="button" onclick="toggleMenu()">
-            <img src="./images/icon-hamburger.svg" alt="hamburguer icon" />
+            <img src="./images/menu.svg" alt="hamburguer icon" />
           </button>
-          <div class="site-nav" id="site-nav">
-            <ul class="nav">
-              <li class="navbar">About me</li>
-              <li class="navbar">Projects</li>
-              <li class="navbar">Skills</li>
-              <li class="navbar">Contact</li>
-            </ul>
+          
+          <div class="site-nav" id="site-nav"><div class="nav">
+            <a class="navbar" href="#about">About me</a>
+            <a class="navbar" href="#projects">Projects</a>
+            <a class="navbar" href="#skills">Skills</a>
+            <a class="navbar" href="#contact">Contact</a></div>
           </div>
         </div>
       </nav>
@@ -59,7 +58,7 @@
         <section>
           <div class="container_2">
             <div class="content_about">
-              <h1>About me</h1>
+              <h1 class="title_sections" id="about">About me</h1>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Reiciendis beatae voluptatibus odio porro ipsa repellat omnis
@@ -71,7 +70,7 @@
         </section>
         <section>
           <div class="container_3">
-            <h1>Projects</h1>
+            <h1 class="title_sections" id="projects">Projects</h1>
             <div class="card">
               <div class="card_image">
                 <img class="cat_card" src="/images/chatb.png" alt="" />
@@ -86,8 +85,9 @@
                 illo molestiae.
               </p>
               <div class="icons">
-                <img src="/images/icon-facebook.svg" alt="" /><img
-                  src="/images/icon-instagram.svg"
+                <img class="skills_icon" src="/images/icon-instagram.svg" alt="" />
+                <img class="skills_icon"
+                  src=""
                   alt=""
                 />
               </div>
@@ -140,7 +140,7 @@
                 />
               </div>
             </div>  
-            <div class="card">
+            <div class="card_more">
            <h1>More view in @github</h1>
           </div>
           </div>
@@ -149,28 +149,89 @@
         <!--skills-->
         <section>
           <div class="container_4">
-            <h1>Skills</h1>
+            <h1 class="title_sections" id="skills">Skills</h1>
 <div class="content_skills">
   <div class="skill">
-    <img src="/images/react.png" alt="">
-  <h1 class="title_skill">React</h1></div>
+    <img class="img_skill" src="/images/skills/html-5.png" alt="">
+  <h1 class="title_skill">Html5</h1></div>
+
   <div class="skill">
-    <img src="/images/sass.png" alt="">
+    <img class="img_skill" src="/images/skills/css-3.png" alt="">
+  <h1 class="title_skill">Css3</h1></div>
+
+  <div class="skill">
+    <img class="img_skill" src="/images/skills/sass.png" alt="">
   <h1 class="title_skill">Sass</h1></div>
-  <div class="skill">
-    <img src="/images/css-3.png" alt="">
-  <h1 class="title_skill">CSS3</h1></div>
-  <div class="skill">
-    <img src="/images/html-5.png" alt="">
-  <h1 class="title_skill">HTML5</h1></div>
-  <div class="skill">
-    <img src="/images/js.png" alt="">
+
+ <div class="skill">
+    <img class="img_skill" src="/images/skills/js.png" alt="">
   <h1 class="title_skill">JavaScript</h1></div>
+
+
+  <div class="skill">
+    <img class="img_skill" src="/images/skills/react.png" alt="">
+  <h1 class="title_skill">React</h1></div>
+
+  
+  <div class="skill">
+    <img class="img_skill" src="/images/skills/react_n.png" alt="">
+  <h1 class="title_skill">React Native</h1></div>
+
+
+<div class="skill">
+  <img class="img_skill" src="/images/skills/ts.png" alt="">
+<h1 class="title_skill">TypeScript</h1></div>
+
+         
+<div class="skill">
+  <img class="img_skill" src="/images/skills/node.png" alt="">
+<h1 class="title_skill">NodeJs</h1></div>
+
+<div class="skill">
+  <img class="img_skill" src="/images/skills/express.svg" alt="">
+<h1 class="title_skill">Express</h1></div>
+
+<div class="skill">
+  <img class="img_skill" src="/images/skills/postman.png" alt="">
+<h1 class="title_skill">Postman</h1></div>
+
+<div class="skill">
+  <img class="img_skill" src="/images/skills/mysql.png" alt="">
+<h1 class="title_skill">MySQL</h1></div>
+
+<div class="skill">
+  <img class="img_skill" src="/images/skills/figma.png" alt="">
+<h1 class="title_skill">Figma</h1></div>
+
 </div>
-          </div>
+</div> 
         </section>
+        
       </main>
-   
+   <footer>
+          <div class="container_5">
+            <div class="content_title">
+            <h1 class="title_footer" id="contact" >Connect with me</h1>
+           <img src="/images/send.svg" alt=""></div>   
+           
+          
+            <p class="mail">carlajoumier@gmail.com</p>
+       
+      <div class="contact">
+        <a class="social" href="https://www.linkedin.com/in/carla-joumier/" target="_blank">
+        <img  src="/images/linkedin1.svg" alt=""></a>
+
+        <a class="social" href="https://github.com/CarJou" target="_blank">
+       
+        <img src="/images/github2.svg" alt="">
+     </a>
+      <a class="social" href="mailto:carlajoumier@gmail.com?subject=Hi%20Carla" target="_blank">
+     
+        <img src="/images/mail.svg" alt="">
+     </a>
+      </div>
+          </div>
+        </footer>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,9 +1,32 @@
-.content_about {
-  padding: 20px;
+@mixin line_before {
+  margin-left: 25px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s, opacity 0.3s;
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    bottom: -2px;
+    left: -5px;
+    width: 140px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #fc97a0;
+  }
+  &:hover::before {
+    transform: scale(1.02);
+    opacity: 0.7;
+    z-index: -1;
+  }
+}
+//sections
+.title_sections {
+  @include line_before;
 }
 //projects
 .container_3 {
-  background-color: #fcd8d4;
+  background-color: #fdc4c9;
   border-top-right-radius: 8rem;
   display: flex;
   flex-direction: column;
@@ -13,7 +36,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #f8e2cf;
+  background-color: #fdf6f0;
   border-radius: 30px;
   margin: 30px;
   height: 20rem;
@@ -36,13 +59,13 @@
   display: flex;
   justify-content: flex-end;
 }
+
 .content_title {
   display: flex;
   align-items: center;
 }
 .link_repo {
   margin-top: 7px;
-
   border-radius: 35px;
   padding: 3px;
 
@@ -58,6 +81,9 @@
     color: #fc9f97;
   }
 }
+.card_more {
+  text-align: center;
+}
 //skills
 .content_skills {
   display: flex;
@@ -69,11 +95,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fcd8d4;
+  text-align: center;
+  background-color: #fdf6f0;
   border-radius: 30px;
-  padding: 35px;
+  padding: 18px;
   box-shadow: 0 3px 10px rgba(128, 128, 128, 0.699);
+  margin: 10px;
+  width: 15%;
+  height: 65px;
 }
 .title_skill {
   font-weight: normal;
+  font-size: 14px;
+  margin: 0;
+}
+.img_skill {
+  width: 45px;
 }

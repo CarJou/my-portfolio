@@ -1,5 +1,7 @@
 .container {
-  background-color: #fcd8d4;
+  background-image: url(/images/wickedbackground.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-bottom-left-radius: 8rem;
 }
 .content_home {
@@ -9,7 +11,7 @@
   margin-top: 0;
   font-family: "Chakra Petch", sans-serif;
   font-size: 26px;
-  letter-spacing: 3px;
+  letter-spacing: 8px;
 }
 .svg_plant {
   margin: auto;
