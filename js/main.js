@@ -1,12 +1,5 @@
 function toggleMenu() {
   let siteNav = document.getElementById("site-nav");
-  siteNav.classList.toggle("nav-open");
+  siteNav.classList.toggle("nav_open");
 }
-
-const isVisible = "is-visible";
-
-document.addEventListener("click", (e) => {
-  if (e.target == document.querySelector(".modal.is-visible")) {
-    document.querySelector(".modal.is-visible").classList.remove(isVisible);
-  }
-});
+ScrollReveal({ duration: 1000 });

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=PT+Mono&display=swap" rel="stylesheet">
     <title>CarJou</title>
     <link rel="stylesheet" href="sass/style.css" />
+    <link rel="icon" href="images/paw.png" type="image/png" />
   </head>
   <body>
     <header>
@@ -19,32 +20,35 @@
             <img src="./images/menu.svg" alt="hamburguer icon" />
           </button>
           
-          <div class="site-nav" id="site-nav"><div class="nav">
+          <div class="site-nav" id="site-nav">
+            <a class="navbar" href="#home">Home</a>
             <a class="navbar" href="#about">About me</a>
             <a class="navbar" href="#projects">Projects</a>
             <a class="navbar" href="#skills">Skills</a>
             <a class="navbar" href="#contact">Contact</a></div>
-          </div>
+        
         </div>
       </nav>
       <main>
         <section>
           <div class="container">
             <div class="content_home">
-              <h1 class="title_1">Hello world!</h1>
+              <h1 class="title_1" id="home">Hello world!</h1>
               <h2 class="title_2">I´m Carla Joumier</h2>
               <p class="description">Frontend developer & cat lover</p>
               <div class="social_media">
+                <a href="https://www.linkedin.com/in/carla-joumier/" target="_blank" rel="noopener noreferrer">
                 <img
                   class="social_img"
                   src="./images/linkedin.svg"
-                  alt="icon-facebook"
-                />
+                  alt="icon-linkedin"
+                /></a>
+                <a href="https://github.com/CarJou" target="_blank" rel="noopener noreferrer">
                 <img
                   class="social_img"
                   src="./images/github.svg"
-                  alt="icon-facebook"
-                />
+                  alt="icon-github"
+                /></a>
               </div>
             </div>
             <div class="content_img">
@@ -56,7 +60,7 @@
     </header>
         <!---->
         <section>
-          <div class="container_2">
+          <div class="container_2 ">
             <div class="content_about">
               <h1 class="title_sections" id="about">About me</h1>
               <p>
@@ -72,77 +76,87 @@
           <div class="container_3">
             <h1 class="title_sections" id="projects">Projects</h1>
             <div class="card">
-              <div class="card_image">
-                <img class="cat_card" src="/images/chatb.png" alt="" />
+              <div class="content_image">
+                <img class="card_img" src="/images/projects/chatb.png" alt="" />
               </div>
-              <div class="content_title">
-            <a href="https://chatbot-fawn.vercel.app/" target="_blank" rel="noopener noreferrer" class="link_repo"><img src="/images/link.svg" alt=""></a>
-              <h1
-              class="title_card">Chatbot</h1>
-            </div>
-              <p>
+             
+              <h1 class="title_card">Chatbot</h1>
+              <p class="p_card">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
                 illo molestiae.
               </p>
               <div class="icons">
-                <img class="skills_icon" src="/images/icon-instagram.svg" alt="" />
-                <img class="skills_icon"
-                  src=""
+                <a class="link_icon" href="https://chatbot-fawn.vercel.app/" target="_blank" rel="noopener noreferrer"> 
+                  <img src="/images/projects/link.svg" alt="" />
+                </a>
+               <a class="link_icon" href="https://github.com/CarJou/chatbot" target="_blank" rel="noopener noreferrer"> 
+                <img 
+                  src="/images/projects/github.svg"
                   alt=""
-                />
+                /></a>
               </div>
             </div>  
+
             <div class="card">
-              <div class="card_image">
-                <img class="cat_card" src="/images/sunny.jpg" alt="" />
+              <div class="content_image">
+                <img class="card_img" src="/images/projects/reactn.jpg" alt="" />
               </div>
-              <h1>Sunnyide</h1>
-              <p>
+              <h1 class="title_card">Guess a number</h1>
+              <p class="p_card">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
                 illo molestiae.
               </p>
               <div class="icons">
-                <img src="/images/icon-facebook.svg" alt="" /><img
-                  src="/images/icon-instagram.svg"
-                  alt=""
-                />
-              </div>
-            </div>  
-            <div class="card">
-              <div class="card_image">
-                <img class="cat_card" src="/images/reactn.jpg" alt="" />
-              </div>
-              <h1>Catbot</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
-                illo molestiae.
-              </p>
-              <div class="icons">
-                <img src="/images/icon-facebook.svg" alt="" /><img
-                  src="/images/icon-instagram.svg"
-                  alt=""
-                />
+                <a class="link_icon" href="https://github.com/CarJou/react-native" target="_blank" rel="noopener noreferrer"> 
+                  <img src="/images/projects/github.svg" alt="" />
+                </a>
               </div>
             </div>
+
             <div class="card">
-              <div class="card_image">
-                <img class="cat_card" src="/images/sunny.jpg" alt="" />
+              <div class="content_image">
+                <img class="card_img" src="/images/projects/gastos.png" alt="" />
               </div>
-              <h1>Sunnyide</h1>
-              <p>
+              <h1 class="title_card">My expenses</h1>
+              <p class="p_card">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
                 illo molestiae.
               </p>
               <div class="icons">
-                <img src="/images/icon-facebook.svg" alt="" /><img
-                  src="/images/icon-instagram.svg"
+                <a class="link_icon" href="https://presupuest.vercel.app/" target="_blank" rel="noopener noreferrer"> 
+                  <img src="/images/projects/link.svg" alt="" />
+                </a>
+               <a class="link_icon" href="https://github.com/CarJou/Presupuesto" target="_blank" rel="noopener noreferrer"> 
+                <img 
+                  src="/images/projects/github.svg"
                   alt=""
-                />
+                /></a>
               </div>
             </div>  
-            <div class="card_more">
-           <h1>More view in @github</h1>
-          </div>
+
+            <div class="card">
+              <div class="content_image">
+                <img class="card_img" src="/images/projects/sunny.jpg" alt="" />
+              </div>
+              <h1 class="title_card">Sunnsyide</h1>
+              <p class="p_card">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+                illo molestiae.
+              </p>
+              <div class="icons">
+                <a class="link_icon" href="https://sunnyside-theta.vercel.app/" target="_blank" rel="noopener noreferrer"> 
+                  <img src="/images/projects/link.svg" alt="" />
+                </a>
+               <a class="link_icon" href="https://github.com/CarJou/sunnyside" target="_blank" rel="noopener noreferrer"> 
+                <img 
+                  src="/images/projects/github.svg"
+                  alt=""
+                /></a>
+              </div>
+            </div>  
+            
+           <h1 class="more_view">More view in <a class="more_git" href="https://github.com/CarJou" target="_blank" rel="noopener noreferrer">github</a></h1>
+       
           </div>
         </div>
         </section>
@@ -167,22 +181,30 @@
     <img class="img_skill" src="/images/skills/js.png" alt="">
   <h1 class="title_skill">JavaScript</h1></div>
 
+  <div class="skill">
+    <img class="img_skill" src="/images/skills/bootstrap.png" alt="">
+  <h1 class="title_skill">Bootstrap</h1></div>
 
   <div class="skill">
     <img class="img_skill" src="/images/skills/react.png" alt="">
   <h1 class="title_skill">React</h1></div>
 
-  
   <div class="skill">
     <img class="img_skill" src="/images/skills/react_n.png" alt="">
   <h1 class="title_skill">React Native</h1></div>
-
 
 <div class="skill">
   <img class="img_skill" src="/images/skills/ts.png" alt="">
 <h1 class="title_skill">TypeScript</h1></div>
 
-         
+<div class="skill">
+  <img class="img_skill" src="/images/skills/styled.png" alt="">
+<h1 class="title_skill">Styled Components</h1></div>
+   
+<div class="skill">
+  <img class="img_skill" src="/images/skills/figma.png" alt="">
+<h1 class="title_skill">Figma</h1></div>      
+
 <div class="skill">
   <img class="img_skill" src="/images/skills/node.png" alt="">
 <h1 class="title_skill">NodeJs</h1></div>
@@ -200,33 +222,26 @@
 <h1 class="title_skill">MySQL</h1></div>
 
 <div class="skill">
-  <img class="img_skill" src="/images/skills/figma.png" alt="">
-<h1 class="title_skill">Figma</h1></div>
+  <img class="img_skill" src="/images/skills/github.png" alt="">
+<h1 class="title_skill">Github</h1></div>
 
 </div>
 </div> 
-        </section>
-        
+        </section>  
       </main>
    <footer>
           <div class="container_5">
             <div class="content_title">
             <h1 class="title_footer" id="contact" >Connect with me</h1>
            <img src="/images/send.svg" alt=""></div>   
-           
-          
-            <p class="mail">carlajoumier@gmail.com</p>
-       
+            <p class="mail">carlajoumier@gmail.com</p>       
       <div class="contact">
         <a class="social" href="https://www.linkedin.com/in/carla-joumier/" target="_blank">
         <img  src="/images/linkedin1.svg" alt=""></a>
-
-        <a class="social" href="https://github.com/CarJou" target="_blank">
-       
+        <a class="social" href="https://github.com/CarJou" target="_blank">   
         <img src="/images/github2.svg" alt="">
      </a>
       <a class="social" href="mailto:carlajoumier@gmail.com?subject=Hi%20Carla" target="_blank">
-     
         <img src="/images/mail.svg" alt="">
      </a>
       </div>

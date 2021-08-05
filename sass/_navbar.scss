@@ -3,33 +3,29 @@ nav {
   justify-content: flex-end;
   align-items: center;
   padding: 20px;
-  background-color: #fff1f2;
+  background-color: $clear;
 }
 .ham {
   display: none;
-}
-.nav {
-  display: flex;
-  cursor: pointer;
-  align-items: center;
+  .nav {
+    display: flex;
+    align-items: center;
+  }
 }
 a.navbar {
   margin-right: 20px;
   text-decoration: none;
-  color: black;
+  color: $black;
   transition: 0.4s;
 }
 
 @media only screen and (max-width: 600px) {
-  nav {
-    align-items: flex-start;
-  }
   .ham {
     display: flex;
     border: none;
     border-radius: 50%;
-    background-color: #fedadd;
-    padding: 8px;
+    background-color: $pink-light;
+    padding: 12px;
     position: fixed;
   }
   .nav-buttons {
@@ -42,17 +38,18 @@ a.navbar {
     overflow: hidden;
     position: absolute;
   }
-  .nav-open {
+  .nav_open {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     background-color: white;
     padding: 0;
     clip-path: polygon(0 8%, 92% 8%, 100% 0, 100% 100%, 0 100%);
-    margin-top: 35px;
-    height: 40%;
+    margin-top: 45px;
+    height: 55%;
     width: 90%;
-    justify-content: center;
     z-index: 5;
   }
   .nav {
@@ -64,12 +61,16 @@ a.navbar {
     margin-top: 35px;
     z-index: 2;
     font-size: 20px;
-    color: #fc97a0;
+    color: $coral;
     transition: transform 0.3s, opacity 0.3s;
     &:hover {
+      color: $black;
       border-left-style: solid;
-      border-left-color: black;
+      border-left-color: $coral;
       transform: scale(1.02);
+    }
+    &:active {
+      background-color: $black;
     }
   }
 }

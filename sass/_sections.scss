@@ -7,12 +7,12 @@
     content: "";
     z-index: -1;
     position: absolute;
-    bottom: -2px;
+    bottom: 2px;
     left: -5px;
     width: 140px;
     height: 10px;
     border-radius: 50px;
-    background-color: #fc97a0;
+    background-color: $coral;
   }
   &:hover::before {
     transform: scale(1.02);
@@ -20,34 +20,49 @@
     z-index: -1;
   }
 }
+@mixin a_hover {
+  padding: 5px;
+  margin-right: 5px;
+  transition: transform 0.3s, background-color 1s, border-radius 0.5s;
+  &:hover {
+    transform: scale(1.1);
+    border-radius: 40%;
+  }
+}
 //sections
 .title_sections {
   @include line_before;
 }
+.container_2,
+.container_3,
+.container_4 {
+  margin-top: 55px;
+}
 //projects
 .container_3 {
-  background-color: #fdc4c9;
+  background-color: $pink;
   border-top-right-radius: 8rem;
   display: flex;
   flex-direction: column;
   border-bottom-left-radius: 8rem;
+  box-shadow: 0 3px 10px $shadow;
 }
 .card {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #fdf6f0;
+  background-color: $white;
   border-radius: 30px;
   margin: 30px;
   height: 20rem;
   padding: 35px;
-  box-shadow: 0 3px 10px rgba(128, 128, 128, 0.699);
+  box-shadow: 0 3px 10px $shadow;
 }
-.card_image {
+.content_image {
   display: flex;
   justify-content: center;
 }
-.cat_card {
+.card_img {
   width: 280px;
   height: 180px;
   border-radius: 20px;
@@ -58,57 +73,31 @@
 .icons {
   display: flex;
   justify-content: flex-end;
-}
-
-.content_title {
-  display: flex;
-  align-items: center;
-}
-.link_repo {
-  margin-top: 7px;
-  border-radius: 35px;
-  padding: 3px;
-
-  &:hover {
-    background-color: #fcd8d4;
-    border-radius: 19px;
-    color: #fc9f97;
+  .link_icon {
+    @include a_hover;
+    &:hover {
+      background-color: $pink;
+    }
   }
 }
-.title_card {
-  color: black;
-  &:hover {
-    color: #fc9f97;
+
+.p_card {
+  margin: 0 0 10px 0;
+}
+.more_view {
+  font-size: 16px;
+  font-family: $font-chakra;
+  letter-spacing: 5px;
+  padding-bottom: 30px;
+  text-align: center;
+  .more_git {
+    @include line_before;
+    margin-left: 0;
+    text-decoration: none;
+    color: $black;
+    &::before {
+      background-color: $white;
+      width: 82px;
+    }
   }
-}
-.card_more {
-  text-align: center;
-}
-//skills
-.content_skills {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #fdf6f0;
-  border-radius: 30px;
-  padding: 18px;
-  box-shadow: 0 3px 10px rgba(128, 128, 128, 0.699);
-  margin: 10px;
-  width: 15%;
-  height: 65px;
-}
-.title_skill {
-  font-weight: normal;
-  font-size: 14px;
-  margin: 0;
-}
-.img_skill {
-  width: 45px;
 }
