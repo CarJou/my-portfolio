@@ -11,4 +11,10 @@ body {
   margin: 0%;
   padding: 0%;
   font-family: $font-mono;
+  a::selection,
+  h2::selection,
+  h1::selection,
+  p::selection {
+    background: $coral;
+  }
 }

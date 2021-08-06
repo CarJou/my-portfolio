@@ -61,12 +61,15 @@
 .content_image {
   display: flex;
   justify-content: center;
-}
-.card_img {
-  width: 280px;
-  height: 180px;
   border-radius: 20px;
+  overflow: hidden;
+  .card_img {
+    width: 280px;
+    height: 180px;
+    border-radius: 20px;
+  }
 }
+
 .text_projects {
   margin-left: 25px;
 }
@@ -99,5 +102,27 @@
       background-color: $white;
       width: 82px;
     }
+  }
+}
+
+//mediaquerys
+@media only screen and (min-width: 800px) {
+  .content_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    width: 30%;
+    height: 20rem;
+  }
+  .content_image {
+    overflow: visible;
+  }
+  .container_2,
+  .container_3,
+  .container_4 {
+    padding: 55px;
   }
 }

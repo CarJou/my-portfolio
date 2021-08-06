@@ -16,10 +16,29 @@ a.navbar {
   margin-right: 20px;
   text-decoration: none;
   color: $black;
-  transition: 0.4s;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s, opacity 0.3s;
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    bottom: 2px;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: transparent;
+  }
+  &:hover::before {
+    transform: scale(1.02);
+    opacity: 0.7;
+    z-index: -1;
+    background-color: $coral;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .ham {
     display: flex;
     border: none;

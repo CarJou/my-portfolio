@@ -29,11 +29,35 @@ a.navbar {
   margin-right: 20px;
   text-decoration: none;
   color: #000000;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
 }
 
-@media only screen and (max-width: 600px) {
+a.navbar::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 2px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+a.navbar:hover::before {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  opacity: 0.7;
+  z-index: -1;
+  background-color: #fc97a0;
+}
+
+@media only screen and (max-width: 800px) {
   .ham {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -182,6 +206,30 @@ a.navbar {
   margin: auto;
 }
 
+@media only screen and (min-width: 670px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 5%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .title_1 {
+    font-size: 36px;
+    letter-spacing: 10px;
+  }
+  .title_2 {
+    font-size: 35px;
+  }
+}
+
 .title_sections {
   margin-left: 25px;
   position: relative;
@@ -259,9 +307,11 @@ a.navbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.card_img {
+.content_image .card_img {
   width: 280px;
   height: 180px;
   border-radius: 20px;
@@ -346,6 +396,34 @@ a.navbar {
 .more_view .more_git::before {
   background-color: #fdf6f0;
   width: 82px;
+}
+
+@media only screen and (min-width: 800px) {
+  .content_card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .card {
+    width: 30%;
+    height: 20rem;
+  }
+  .content_image {
+    overflow: visible;
+  }
+  .container_2,
+  .container_3,
+  .container_4 {
+    padding: 55px;
+  }
 }
 
 .container_5 {
@@ -448,5 +526,19 @@ body {
   margin: 0%;
   padding: 0%;
   font-family: "PT Mono", monospace;
+}
+
+body a::-moz-selection,
+body h2::-moz-selection,
+body h1::-moz-selection,
+body p::-moz-selection {
+  background: #fc97a0;
+}
+
+body a::selection,
+body h2::selection,
+body h1::selection,
+body p::selection {
+  background: #fc97a0;
 }
 /*# sourceMappingURL=style.css.map */
