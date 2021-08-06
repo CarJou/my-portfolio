@@ -128,13 +128,11 @@ a.navbar:hover::before {
   }
   a.navbar:hover {
     color: #000000;
-    border-left-style: solid;
-    border-left-color: #fc97a0;
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
   }
   a.navbar:active {
-    background-color: #000000;
+    background-color: #fc97a0;
   }
 }
 

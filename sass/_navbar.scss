@@ -84,12 +84,10 @@ a.navbar {
     transition: transform 0.3s, opacity 0.3s;
     &:hover {
       color: $black;
-      border-left-style: solid;
-      border-left-color: $coral;
       transform: scale(1.02);
     }
     &:active {
-      background-color: $black;
+      background-color: $coral;
     }
   }
 }
