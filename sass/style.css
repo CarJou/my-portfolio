@@ -366,6 +366,7 @@ a.navbar:hover::before {
 
 .p_card {
   margin: 0 0 10px 0;
+  line-height: 1.6;
 }
 
 .more_view {
