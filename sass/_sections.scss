@@ -40,7 +40,8 @@
 }
 //about
 .about_p {
-  padding: 10px;
+  padding: 20px;
+  margin: 0;
 }
 //projects
 .container_3 {
@@ -128,5 +129,8 @@
   .container_3,
   .container_4 {
     padding: 55px;
+  }
+  .about_p {
+    padding: 10px;
   }
 }
