@@ -1,5 +1,4 @@
-# Welcome to my portfolio ⚡
-
+# <samp>⚡ Welcome to my portfolio 
 ### Skills:
 <ul>
 <li>Html5</li>
