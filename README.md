@@ -3,7 +3,7 @@
 ### Skills:
 <ul>
 <li>Html5</li>
-<li>Css3</li>
+<li>Sass</li>
 <li>Javascript</li>
 <li>Scroll Reveal</li>
 </ul>
