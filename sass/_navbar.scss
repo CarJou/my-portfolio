@@ -47,6 +47,7 @@ a.navbar {
     background-color: $pink-light;
     padding: 12px;
     position: fixed;
+    z-index: 5;
   }
   .nav-buttons {
     display: flex;

@@ -68,6 +68,7 @@ a.navbar:hover::before {
     background-color: #fedadd;
     padding: 12px;
     position: fixed;
+    z-index: 5;
   }
   .nav-buttons {
     display: -webkit-box;
@@ -414,7 +415,7 @@ a.navbar:hover::before {
   width: 82px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1200px) {
   .content_card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -537,6 +538,31 @@ a.navbar:hover::before {
 
 .social:hover {
   background-color: #fc97a0;
+}
+
+.button_up {
+  background-color: #fedadd;
+  border: none;
+  outline: none;
+  position: fixed;
+  bottom: 0px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.699);
+          box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.699);
+}
+
+.button_up .img_arrow {
+  padding: 11px;
+}
+
+@media only screen and (max-width: 800px) {
+  .button_up {
+    display: none;
+  }
 }
 
 body {

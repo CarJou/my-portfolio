@@ -4,22 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+     <title>Carla Joumier</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=PT+Mono&display=swap" rel="stylesheet">
-    <title>Carla Joumier</title>
     <link rel="stylesheet" href="sass/style.css" />
     <link rel="icon" href="images/paw.png" type="image/png" />
   </head>
-  <body>
+  <body id="body">
     <header>
       <nav>
         <div class="nav-buttons">
-          <button class="ham" type="button" onclick="toggleMenu()">
-            <img src="./images/menu.svg" alt="hamburguer icon" />
+          <button class="ham" type="button" onclick="toggleMenu()" id="btn-menu">
+            <img src="./images/menu.svg" alt="hamburguer icon"/>
           </button>
-          
           <div class="site-nav" id="site-nav">
             <a class="navbar" href="#home">Home</a>
             <a class="navbar" href="#about">About me</a>
@@ -30,7 +28,7 @@
         </div>
       </nav>
       <main>
-        <section id="home">
+        <section id="home" class="home">
           <div class="container" >
             <div class="content_home">
               <h1 class="title_1" >Hello world!</h1>
@@ -53,13 +51,13 @@
             </div>
             <div class="content_img">
               <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-              <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_1plcwvk5.json"  background="transparent"  speed="1"  style="width: 350px; height: 350px;"  loop  autoplay class="svg_plant"></lottie-player>
+              <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_1plcwvk5.json"  background="transparent"  speed="1"  style="width: 300px; height: 350px;"  loop  autoplay class="svg_plant"></lottie-player>
             </div>
           </div>
         </section>
     </header>
         <!---->
-        <section id="about">
+        <section id="about" class="scroll">
           <div class="container_2" >
             <div class="content_about">
               <h1 class="title_sections">About me</h1>
@@ -73,7 +71,7 @@
             </div>
           </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="scroll">
           <div class="container_3" >
             <h1 class="title_sections">Projects</h1>
             <div class="content_card">
@@ -161,7 +159,7 @@
         </div>
         </section>
         <!--skills-->
-        <section id="skills">
+        <section id="skills" class="scroll">
           <div class="container_4">
             <h1 class="title_sections">Skills</h1>
 <div class="content_skills">
@@ -226,8 +224,9 @@
 <h1 class="title_skill">Github</h1></div>
 </div>
 </div> 
-        </section>  
+        </section>
       </main>
+      
    <footer id="contact">
           <div class="container_5">
             <div class="content_title">
@@ -243,9 +242,13 @@
       <a class="social" href="mailto:carlajoumier@gmail.com?subject=Hi%20Carla" target="_blank">
         <img src="/images/mail.svg" alt="mail icon">
      </a>
-      </div>
-          </div>
+    </div>
+     <div class="arrow_up" id="arrow_up">
+      <a href="#body" class="button_up"><img src="/images/arrow-up.svg" alt="arrow up" class="img_arrow"></a>
+      </div> 
+          </div> 
         </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
