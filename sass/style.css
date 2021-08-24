@@ -587,4 +587,8 @@ body h1::selection,
 body p::selection {
   background: #fc97a0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 /*# sourceMappingURL=style.css.map */
